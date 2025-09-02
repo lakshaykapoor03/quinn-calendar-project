@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .calendar-day {
+    @apply relative flex items-center justify-center w-10 h-10 text-sm font-medium transition-all duration-200 cursor-pointer rounded-lg;
+  }
+  
+  .calendar-day:hover {
+    @apply bg-primary-100 text-primary-700;
+  }
+  
+  .calendar-day.selected {
+    @apply bg-primary-500 text-white shadow-lg;
+  }
+  
+  .calendar-day.today {
+    @apply bg-primary-50 text-primary-600 border-2 border-primary-200;
+  }
+  
+  .calendar-day.other-month {
+    @apply text-gray-400;
+  }
+  
+  .calendar-day.other-month:hover {
+    @apply bg-gray-50 text-gray-500;
+  }
+  
+  .scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 3px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8;
+  }
+  
+  .scroll-snap-align-start {
+    scroll-snap-align: start;
+  }
+  
+  .month-title {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .month-title:hover {
+    transform: scale(1.02);
+  }
+}
