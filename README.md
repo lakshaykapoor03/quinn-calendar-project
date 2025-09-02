@@ -2,6 +2,19 @@
 
 A modern, responsive React calendar component with infinite scrolling capabilities, built with Tailwind CSS.
 
+
+## 🚀 Live Demo  
+
+- **Live URL**: [https: //quinn-calendar.netlify.app/](https://quinn-calendar.netlify.app/)   
+
+---
+
+## 📦 Tech Stack  
+
+- **Frontend**: React
+- **Styling**: Tailwind CSS  
+
+
 ## Features
 
 - **Infinite Scrolling**: Seamlessly scroll through months and years
