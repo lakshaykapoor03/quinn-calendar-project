@@ -19,7 +19,7 @@ A **React-based infinite scrollable calendar** that allows smooth vertical navig
 
 ## 🚀 Live Demo  
 
-- **Live URL**: [https://quinn-calendar.netlify.app/](#)   
+- **Live URL**: [https://quinn-calendar.netlify.app/](https://quinn-calendar.netlify.app/)   
 
 ---
 
